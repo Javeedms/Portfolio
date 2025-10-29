@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javeed Surpur | Computer Science Graduate & Software Engineer</title>
+    <!-- Load Tailwind CSS via CDN --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter Font --><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for Blue & White Theme */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* Very light gray/White background */
+            color: #1f2937; /* Dark text color */
+            scroll-behavior: smooth;
+        }
+        .section {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .accent-color {
+            color: #2563eb; /* Vibrant Blue accent color (blue-600) */
+        }
+        .accent-bg {
+            background-color: #2563eb;
+        }
+        .btn-primary {
+            background-color: #2563eb;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #1d4ed8; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body class="selection:bg-blue-300 selection:text-blue-900">
+
+    <!-- Header & Navigation --><header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold accent-color">JaveedSurpur.dev</a>
+            <div class="space-x-8 hidden md:flex">
+                <a href="#projects" class="text-gray-700 hover:accent-color transition duration-300">Projects</a>
+                <a href="#skills" class="text-gray-700 hover:accent-color transition duration-300">Skills</a>
+                <a href="#education" class="text-gray-700 hover:accent-color transition duration-300">Education</a>
+                <a href="#contact" class="text-gray-700 hover:accent-color transition duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button (Placeholder for JS toggle) --><button id="mobile-menu-button" class="md:hidden text-2xl text-gray-800 hover:accent-color">☰</button>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) --><div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 px-4 pt-2 pb-4 space-y-1 sm:px-3 shadow-lg">
+        <a href="#projects" class="block py-2 rounded-md text-base font-medium text-gray-800 hover:accent-color">Projects</a>
+        <a href="#skills" class="block py-2 rounded-md text-base font-medium text-gray-800 hover:accent-color">Skills</a>
+        <a href="#education" class="block py-2 rounded-md text-base font-medium text-gray-800 hover:accent-color">Education</a>
+        <a href="#contact" class="block py-2 rounded-md text-base font-medium text-gray-800 hover:accent-color">Contact</a>
+    </div>
+
+    <!-- Hero Section --><section id="home" class="section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[80vh] flex items-center">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <!-- Text Content --><div class="order-2 md:order-1">
+                <p class="text-lg text-blue-500 mb-2">Enthusiastic CS Graduate</p>
+                <h1 class="text-5xl sm:text-7xl font-extrabold text-gray-900 mb-4 leading-tight">
+                    Javeed Surpur
+                </h1>
+                <h2 class="text-2xl sm:text-3xl font-semibold mb-6 accent-color">
+                    Aspiring Software Engineer
+                </h2>
+                <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                    Skilled in building responsive **full-stack web applications** using **HTML, CSS, JavaScript, PHP, and MySQL**. Detail-oriented problem-solver with a strong foundation in **Java** and **Python**.
+                </p>
+                <a href="#projects" class="inline-block px-8 py-3 text-lg font-medium text-white rounded-lg shadow-xl transition duration-300 ease-in-out transform hover:scale-[1.02] btn-primary">
+                    View Projects
+                </a>
+            </div>
+            <!-- Image/Avatar Placeholder --><div class="order-1 md:order-2 flex justify-center">
+                <img src="profile.png" alt="Javeed Surpur Profile" class="w-64 h-64 object-cover rounded-full border-4 border-blue-600 shadow-2xl shadow-blue-500/50">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section --><section id="projects" class="section bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-gray-900 mb-4 text-center">Featured Projects</h3>
+            <p class="text-xl text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+                Showcasing diverse skills from modern web design and full-stack logic to business-specific applications.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project Card 1: SM Decore App (UPDATED DESCRIPTION) --><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-blue-500/30 transition duration-300 transform hover:scale-[1.02] border border-gray-200">
+                    <h4 class="text-2xl font-bold accent-color mb-3">SM Decore (Booking & Design)</h4>
+                    <p class="text-gray-600 mb-4">Full-stack booking application developed for a **lighting decoration business**, enabling customers to browse designs, check availability, and submit booking requests for streamlined service management.</p>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <span class="font-semibold text-gray-800">Tech Stack:</span> HTML, Tailwind CSS, JavaScript, PHP, MySQL
+                    </p>
+                    <a href="https://javeedms.github.io/SM-Decor/" class="text-blue-600 hover:text-blue-800 font-medium flex items-center group">
+                        Live Demo / GitHub Link
+                        <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                    </a>
+                </div>
+
+                <!-- Project Card 2: ARS Landing Page (UPDATED DESCRIPTION) --><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-blue-500/30 transition duration-300 transform hover:scale-[1.02] border border-gray-200">
+                    <h4 class="text-2xl font-bold accent-color mb-3">ARS Software & Robotics</h4>
+                    <p class="text-gray-600 mb-4">Designed and coded a professional, responsive landing page for an Applicant Ranking System (ARS) product by a **software development and robotics business**, optimizing lead generation.</p>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <span class="font-semibold text-gray-800">Tech Stack:</span> HTML, CSS, Responsive Design, JavaScript
+                    </p>
+                    <a href="https://javeedms.github.io/ARS/" class="text-blue-600 hover:text-blue-800 font-medium flex items-center group">
+                        Live Demo / GitHub Link
+                        <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                    </a>
+                </div>
+
+                <!-- Project Card 3: ATS Friendly Resume Builder App --><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-blue-500/30 transition duration-300 transform hover:scale-[1.02] border border-gray-200">
+                    <h4 class="text-2xl font-bold accent-color mb-3">ATS Friendly Resume Builder App</h4>
+                    <p class="text-gray-600 mb-4">Built a functional web tool that generates professional resumes guaranteed to be correctly parsed by **Applicant Tracking Systems (ATS)**, ensuring candidate visibility.</p>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <span class="font-semibold text-gray-800">Tech Stack:</span> HTML, CSS, JavaScript, PHP, Template Logic
+                    </p>
+                    <a href="https://javeedms.github.io/ATS_Resume/" class="text-blue-600 hover:text-blue-800 font-medium flex items-center group">
+                        Live Demo / GitHub Link
+                        <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                    </a>
+                </div>
+                
+                <!-- Project Card 4: E-Commerce Website (ADDED) --><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-blue-500/30 transition duration-300 transform hover:scale-[1.02] border border-gray-200">
+                    <h4 class="text-2xl font-bold accent-color mb-3">E-Commerce Website</h4>
+                    <p class="text-gray-600 mb-4">Designed and developed a full-stack shopping website with a product catalog, secure shopping cart, and integrated user authentication features.</p>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <span class="font-semibold text-gray-800">Tech Stack:</span> HTML, CSS, JavaScript, PHP, MySQL
+                    </p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center group">
+                        
+                        <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                    </a>
+                </div>
+
+                <!-- Project Card 5: Car Rental Management System (ADDED) --><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-blue-500/30 transition duration-300 transform hover:scale-[1.02] border border-gray-200">
+                    <h4 class="text-2xl font-bold accent-color mb-3">Car Rental Management System</h4>
+                    <p class="text-gray-600 mb-4">Created a complete platform for users to book and manage car rentals, featuring real-time availability tracking and an admin management panel.</p>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <span class="font-semibold text-gray-800">Tech Stack:</span> HTML, CSS, JavaScript, PHP, MySQL
+                    </p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center group">
+                        
+                        <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                    </a>
+                </div>
+
+                <!-- Project Card 6: Milk Farm Management System (ADDED) --><div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-blue-500/30 transition duration-300 transform hover:scale-[1.02] border border-gray-200">
+                    <h4 class="text-2xl font-bold accent-color mb-3">Milk Farm Management System</h4>
+                    <p class="text-gray-600 mb-4">Developed a robust system to automate record-keeping for milk production, distribution, and sales, utilizing MySQL for efficient data handling.</p>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <span class="font-semibold text-gray-800">Tech Stack:</span> HTML, CSS, JavaScript, PHP, MySQL
+                    </p>
+                    <a href="#" class="text-blue-600 hover:text-blue-800 font-medium flex items-center group">
+                        
+                        <span class="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Strengths Section --><section id="skills" class="section max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h3 class="text-4xl font-bold text-gray-900 mb-4 text-center">Technical Skills & Strengths</h3>
+        <div class="max-w-4xl mx-auto mt-12 grid grid-cols-1 lg:grid-cols-3 gap-12">
+            
+            <!-- Strengths --><div class="lg:col-span-2">
+                <h4 class="text-2xl font-bold text-gray-900 mb-4 accent-color">Bio & Core Strengths</h4>
+                <p class="text-lg text-gray-600 mb-6">
+                    As a recent Computer Science graduate, my objective is to leverage my academic knowledge and project experience to excel as a **Software Developer**. I am a **quick learner**, adaptable to new technologies, and possess **strong problem-solving and debugging skills**.
+                </p>
+                <p class="text-lg text-gray-600 mb-6">
+                    I thrive in both **team-based and independent projects**, utilizing tools like Git and GitHub for effective version control. I am enthusiastic about applying my skills in **Java, Python, and web development** to create impactful solutions.
+                </p>
+            </div>
+
+            <!-- Technical Skills --><div>
+                <h4 class="text-2xl font-bold text-gray-900 mb-4 accent-color">Technology Stack</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 text-sm rounded-full border border-blue-200">Java</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 text-sm rounded-full border border-blue-200">Python</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 text-sm rounded-full border border-blue-200">C Programming</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 text-sm rounded-full border border-blue-200">HTML5 / CSS3 / JS</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 text-sm rounded-full border border-blue-200">PHP / MySQL</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 text-sm rounded-full border border-blue-200">Git & GitHub</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 text-sm rounded-full border border-blue-200">Figma / Adobe XD</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 text-sm rounded-full border border-blue-200">API Testing (Postman)</span>
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 text-sm rounded-full border border-blue-200">Gen AI Tools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section --><section id="education" class="section bg-gray-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-gray-900 mb-4 text-center">Education & Certifications</h3>
+            <div class="space-y-8 mt-12">
+                
+                <!-- B.E. Degree --><div class="border-l-4 border-blue-500 pl-4 py-3 bg-white rounded-md shadow-lg border border-gray-200">
+                    <p class="text-lg font-semibold text-gray-900">B.E. (Computer Science Engineering)</p>
+                    <p class="text-sm text-blue-600">Govt. Engineering College, Talakal</p>
+                    <p class="text-xs text-gray-500">Graduated: 2024 | CGPA: 7.3</p>
+                </div>
+                
+                <!-- Diploma --><div class="border-l-4 border-blue-500 pl-4 py-3 bg-white rounded-md shadow-lg border border-gray-200">
+                    <p class="text-lg font-semibold text-gray-900">Diploma (Computer Science Engineering)</p>
+                    <p class="text-sm text-blue-600">C.V. Charantimath Polytechnic</p>
+                    <p class="text-xs text-gray-500">Graduated: 2021 | 71%</p>
+                </div>
+                
+                <!-- Certification --><div class="border-l-4 border-blue-500 pl-4 py-3 bg-white rounded-md shadow-lg border border-gray-200">
+                    <p class="text-lg font-semibold text-gray-900">Manual & Automation Testing Certification</p>
+                    <p class="text-sm text-blue-600">ExcelR</p>
+                    <p class="text-xs text-gray-500">Demonstrates commitment to quality assurance best practices.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section --><section id="contact" class="section text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-4xl font-bold text-gray-900 mb-4">Let's Build Together</h3>
+            <p class="text-xl text-gray-600 mb-8">
+                I'm actively seeking a Software Developer role. Connect with me to discuss my projects or development opportunities.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="mailto:javeedsurpur25@gmail.com" class="inline-block px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition duration-300 transform hover:scale-[1.05]">
+                    Email Me
+                </a>
+                <a href="https://linkedin.com/in/javeed-surpur" target="_blank" class="inline-block px-6 py-3 btn-primary text-white rounded-lg transition duration-300 transform hover:scale-[1.05]">
+                    LinkedIn
+                </a>
+                <!-- Using a placeholder for GitHub --><a href="https://github.com/JaveedSurpur" target="_blank" class="inline-block px-6 py-3 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition duration-300 transform hover:scale-[1.05]">
+                    GitHub
+                </a>
+            </div>
+            <p class="mt-8 text-gray-500 text-sm">
+                Phone: +91-7975765830
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer --><footer class="bg-gray-800 py-8 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 Javeed Surpur. Designed and Developed for Impact.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle and Smooth Scrolling --><script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Toggle mobile menu visibility
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Smooth scrolling logic (Modern browsers handle this with scroll-behavior: smooth; CSS)
+            // However, we can add a listener to close the mobile menu on link click
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
